@@ -2,6 +2,18 @@
 A repository for the management of issues related to vocabularies managed by the Argo Data Management Team
 The dashboard for ArgoVocabs ticket is : https://github.com/orgs/nvs-vocabs/projects/2
 
+# Resources: M2M access to the NVS via API
+
+<p>For machine to machine (M2M) access to the Argo Vocabularies on the NVS, the <strong>NVS SPARQL endpoint</strong> can be used.</p>
+<p>General information on the NVS SPARQL endpoint can be found on the NVS website: https://vocab.nerc.ac.uk/sparql/</p>
+<p>SPARQL queries can be integrated into code written in other programming languages (Python, Matlab etc.).</p>
+
+> For a basic example, please open the "m2m_NVS_sparql.ipynb" file linked to this repo into a Jupyter Notebook.
+>> To test, edit lines marked by '# Switch' to select either prefLabel/altLabel, and point to specific Argo vocabularies by inserting its name (e.g. 'R03') where the line is marked by '# Edit'.
+
+
+
+
 # Editors list
 |Argo NVS Collections|Editors|
 |---|---|

@@ -8,8 +8,8 @@ The dashboard for ArgoVocabs ticket is : https://github.com/orgs/nvs-vocabs/proj
 <p>General information on the NVS SPARQL endpoint can be found on the NVS website: https://vocab.nerc.ac.uk/sparql/</p>
 <p>SPARQL queries can be integrated into code written in other programming languages (Python, Matlab etc.).</p>
 
-> For a basic example, please open the "m2m_NVS_sparql.ipynb" file linked to this repo into a Jupyter Notebook.
->> To test, edit lines marked by '# Switch' to select either prefLabel/altLabel, and point to specific Argo vocabularies by inserting its name (e.g. 'R03') where the line is marked by '# Edit'.
+> For a basic example, please see the "m2m_NVS_sparql.ipynb" file linked to this repo.
+>> To test, open the file into a Jupyter Notebook; edit lines marked by '# Switch' to select either prefLabel/altLabel, and point to specific Argo vocabularies by inserting its name (e.g. 'R03') where the line is marked by '# Edit'.
 
 
 

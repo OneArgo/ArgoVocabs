@@ -15,6 +15,9 @@ The dashboard for ArgoVocabs ticket is : https://github.com/orgs/nvs-vocabs/proj
 
 
 # Editors list
+Editors should be registered as editors in the NVS. Here : https://vocab.nerc.ac.uk/editor/. 
+NVS will then allow editors to edit new terms of the corresponding collections.
+
 |Argo NVS Collections|Editors|
 |---|---|
 |[R01](https://vocab.nerc.ac.uk/search_nvs/R01/) - DATA_TYPE|[vturpin](https://github.com/vturpin), [tcarval](https://github.com/tcarval), [MKrieger29](https://github.com/MKrieger29), [RomainCancouet](https://github.com/RomainCancouet)|

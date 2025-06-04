@@ -5,8 +5,8 @@ The dashboard for ArgoVocabs ticket is : https://github.com/orgs/nvs-vocabs/proj
 # Guidance for management of issues
 1) Raise, describe, label and assigne your issue
 2) Discuss the issue along the thread of the ticket
-3) Once an agreement has been reached summarize the agreement so that readers do not have to read the full thread back to know what to do
-4) Update label relevantly
+3) Update label relevantly
+4) Once an agreement has been reached summarize the agreement so that readers do not have to read the full thread back to know what to do
 5) Publish action list in the form a ticking boxes with the responsible for each action
 6) close the ticket when all the sub-actions are fulfilled.
 

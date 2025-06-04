@@ -10,6 +10,21 @@ The dashboard for ArgoVocabs ticket is : https://github.com/orgs/nvs-vocabs/proj
 5) Publish action list and assignees
 6) Once the action list is completed, the issue can be closed.
 
+# Standard process for releasing vocab, documentation and checker
+The release of the new collection is made "on the fly", following ticket management.
+Once the collection is created, the documentation is updated accordingly.
+The release of new version of the documentation is made regularly, there is no scheddule for new format version. New version documentation must be advertised through the argo-dm@groups.wmo.int mailing list.
+Once the documentation is released, the checker will be updated. New version file checker must be advertised through the argo-dm@groups.wmo.int mailing list.
+The release of new version of the documentation is made regularly, there is no formal scheddule for new format version.
+The release of new version of the file checker is made regularly, following documentation update. Similarly, there is no formal scheddule for new checker version.
+
+# The importance of label
+Ticket should be flagged with the appropriate label for good management.
+Label related to AVTT have the following meaning:
+Priority
+AVTT discussion requiered
+AVTT 
+
 
 # Resources: M2M access to the NVS via API
 

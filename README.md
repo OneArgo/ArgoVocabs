@@ -3,7 +3,7 @@ A repository for the management of issues related to vocabularies managed by the
 The dashboard for ArgoVocabs ticket is : https://github.com/orgs/nvs-vocabs/projects/2
 
 # Guidance for management of issues
-1) Raise, describe and assigne your issue
+1) Raise, describe, label and assigne your issue
 2) Discuss the issue along the thread of the ticket
 3) Once an agreement has been reached summarize the agreement so that readers do not have to read the full thread back to know what to do
 4) Tag the ticket relevantly

@@ -6,31 +6,23 @@ The dashboard for ArgoVocabs ticket is : https://github.com/orgs/nvs-vocabs/proj
 1) Raise, describe, label and assigne your issue
 2) Discuss the issue along the thread of the ticket
 3) Once an agreement has been reached summarize the agreement so that readers do not have to read the full thread back to know what to do
-4) Tag the ticket relevantly
-5) Publish action list and assignees
-6) Once the action list is completed, the issue can be closed.
-
-# Standard process for releasing vocab, documentation and checker
-The release of the new collection is made "on the fly", following ticket management.
-
-Once the collection is created, the documentation is updated accordingly.
-
-The release of new version of the documentation is made regularly, there is no scheddule for new format version. New version documentation must be advertised through the argo-dm@groups.wmo.int mailing list.
-
-Once the documentation is released, the checker will be updated. New version file checker must be advertised through the argo-dm@groups.wmo.int mailing list.
-
-The release of new version of the documentation is made regularly, there is no formal scheddule for new format version.
-
-The release of new version of the file checker is made regularly, following documentation update. Similarly, there is no formal scheddule for new checker version.
+4) Update label relevantly
+5) Publish action list in the form a ticking boxes with the responsible for each action
+6) close the ticket when all the sub-actions are fulfilled.
 
 # The importance of label
-Label are used for proper management of tickets.
+* Label are used for proper management of tickets.
+* Each ticket should be flagged with the appropriate label for good management and labeling evolve as discussion progress.
+* Each label has a short description of its meaning.
+* While everyone should label ticket, it is part of the responsibilities of the co-chair of the AVTT to regularly review and update ticket labeling.
 
-Each ticket should be flagged with the appropriate label for good management and labeling evolve as discussion progress.
-
-Each label has a short description of its meaning.
-
-While everyone should label ticket, it is part of the responsibilities of the co-chair of the AVTT to regularly review and update ticket labeling.
+# Standard process for releasing vocab, documentation and checker
+* The update and release of the new collection is made "on the fly", following ticket requierments.
+* Once the collection is created, the documentation is updated accordingly.
+* The release of new version of the documentation is made regularly, there is no scheddule for new format version. New version documentation must be advertised through the argo-dm@groups.wmo.int mailing list.
+* Once the documentation is released, the checker will be updated. New version file checker must be advertised through the argo-dm@groups.wmo.int mailing list.
+* The release of new version of the documentation is made regularly, there is no formal scheddule for new format version.
+* The release of new version of the file checker is made regularly, following documentation update. Similarly, there is no formal scheddule for new checker version.
 
 # Resources: M2M access to the NVS via API
 

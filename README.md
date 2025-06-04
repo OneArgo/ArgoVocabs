@@ -12,16 +12,24 @@ The dashboard for ArgoVocabs ticket is : https://github.com/orgs/nvs-vocabs/proj
 
 # Standard process for releasing vocab, documentation and checker
 The release of the new collection is made "on the fly", following ticket management.
+
 Once the collection is created, the documentation is updated accordingly.
+
 The release of new version of the documentation is made regularly, there is no scheddule for new format version. New version documentation must be advertised through the argo-dm@groups.wmo.int mailing list.
+
 Once the documentation is released, the checker will be updated. New version file checker must be advertised through the argo-dm@groups.wmo.int mailing list.
+
 The release of new version of the documentation is made regularly, there is no formal scheddule for new format version.
+
 The release of new version of the file checker is made regularly, following documentation update. Similarly, there is no formal scheddule for new checker version.
 
 # The importance of label
 Label are used for proper management of tickets.
+
 Each ticket should be flagged with the appropriate label for good management and labeling evolve as discussion progress.
+
 Each label has a short description of its meaning.
+
 While everyone should label ticket, it is part of the responsibilities of the co-chair of the AVTT to regularly review and update ticket labeling.
 
 # Resources: M2M access to the NVS via API

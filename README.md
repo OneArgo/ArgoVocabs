@@ -3,26 +3,25 @@ A repository for the management of issues related to vocabularies managed by the
 The dashboard for ArgoVocabs ticket is : https://github.com/orgs/nvs-vocabs/projects/2
 
 # Guidance for management of issues
-1) Raise, describe, label and assigne your issue
+1) Raise, describe, label and indicate an assignee of your issue
 2) Discuss the issue along the thread of the ticket
 3) Update label relevantly
 4) Once an agreement has been reached summarize the agreement so that readers do not have to read the full thread back to know what to do
-5) Publish action list in the form a ticking boxes with the responsible for each action
-6) close the ticket when all the sub-actions are fulfilled.
+5) Publish action list in the form a ticking boxes with the responsible for each action (and add them as assignee so relevant people can filter on this to quickly get the list of the actions they have to do)
+6) close the ticket when all the sub-actions are completely fulfilled (i.e. before "ticking an action", wait for the change to be visible in the operational flow. For instance, if you modify a table entry, wait for it to be accepted by NOC team, and effectively published in the table. This ensures potential final steps issues are not unnoticed).
 
 # The importance of label
-* Label are used for proper management of tickets.
-* Each ticket should be flagged with the appropriate label for good management and labeling evolve as discussion progress.
+* Label are used for proper management of tickets and filtering for review, action follow-up, etc.
+* Each ticket should be flagged with the appropriate label for good management and labeling evolves as discussion progress.
 * Each label has a short description of its meaning.
 * While everyone should label ticket, it is part of the responsibilities of the co-chair of the AVTT to regularly review and update ticket labeling.
 
 # Standard process for releasing vocab, documentation and checker
-* The update and release of the new collection is made "on the fly", following ticket requierments.
-* Once the collection is created, the documentation is updated accordingly.
-* The release of new version of the documentation is made regularly, there is no scheddule for new format version. New version documentation must be advertised through the argo-dm@groups.wmo.int mailing list.
-* Once the documentation is released, the checker will be updated. New version file checker must be advertised through the argo-dm@groups.wmo.int mailing list.
-* The release of new version of the documentation is made regularly, there is no formal scheddule for new format version.
-* The release of new version of the file checker is made regularly, following documentation update. Similarly, there is no formal scheddule for new checker version.
+* The update and release of the new collection is made "on the fly", following ticket requirements.
+* When a new vocabulary collection is created, the documentation is updated accordingly (at the very least to indicate the new collection url).
+* The release of new version of the documentation is made regularly (no formal schedule). New version documentation must be advertised through the *argo-dm@groups.wmo.int* mailing list.
+    * Format_version evolves (from verion x.x to x.(x+1) or (x.1).0 when previous file in version x.x will not pass anymore the FileChecker with the envisioned change. It is good practice to make new metadata field optionnal, during a transition phase, which can last 1 to 3 years, before making them mandatory and hence increase the Format_version numbering). 
+* Once the documentation is released, the checker is updated. New version of the file checker must be advertised through the *argo-dm@groups.wmo.int* mailing list.
 
 # Resources: M2M access to the NVS via API
 
@@ -32,8 +31,6 @@ The dashboard for ArgoVocabs ticket is : https://github.com/orgs/nvs-vocabs/proj
 
 > For a basic example, please see the "m2m_NVS_sparql.ipynb" file linked to this repo.
 >> To test, open the file into a Jupyter Notebook; edit lines marked by '# Switch' to select either prefLabel/altLabel, and point to specific Argo vocabularies by inserting its name (e.g. 'R03') where the line is marked by '# Edit'.
-
-
 
 
 # Editors list

@@ -23,6 +23,28 @@ The dashboard for ArgoVocabs ticket is : https://github.com/orgs/nvs-vocabs/proj
     * Format_version evolves (from verion x.x to x.(x+1) or (x.1).0 when previous file in version x.x will not pass anymore the FileChecker with the envisioned change. It is good practice to make new metadata field optionnal, during a transition phase, which can last 1 to 3 years, before making them mandatory and hence increase the Format_version numbering). 
 * Once the documentation is released, the checker is updated. New version of the file checker must be advertised through the *argo-dm@groups.wmo.int* mailing list.
 
+# A few information on NVS updates
+## Necessary inputs to request the creation of a new collection to NOC/BODC
+The Vocab editors do not have the right to create new collections. This is only granted to NOC/BOSC. This is to avoid duplicate of similar collections when something already in place may be suitable for the purpose. 
+Thus, to create a new collection, a request must be sent to NOC/BODC (Dani). This request must contain the following information:
+ - Governance: who is the editor in charge of the table update
+ - Collection Name
+ - Description: description of the content of the collection
+ - an excel or csv file containing the elements of the table: ID; preffered Label; Alternative Label (if relevant); Definition
+
+## Mappings
+Mappings are used to inform relationship between tables. For instance, inform all the sensor_models manufactured by one sensor_maker, or all the platform_types manufactures by one platform_maker, etc.
+They are used by the FileChecker to ensure the consistency between these metadata fields in the Argo dataset.
+The Vocab editors have the right to perform mappings. It is advised to ask NOC/BODC the appropriate mapping type before proceeding. Herebelow is an example of mapping file content submitted to NVS editor (bulk update option) between table R23 (platform_type) and R08 (intrument_type = platform_type + mounted CTD sensor type) and between R23 and R24 (platform_maker). BRD stands for broader, and MIN for MINIMUM
+- R23, ALTO, BRD, R08, 873, I
+- R23, HM2000, BRD, R08, 870, I
+- R23, HM4000, BRD, R08, 881, I
+- R23, XUANWU, BRD, R08, 882, I
+- R23, HM4000, MIN, R24, QNLM, I
+
+The Vocab editors can not delete mappings. If ever a correction was needed, the editor must ask NOC/BODC (Dani) to perform the deletion
+
+
 # Resources: M2M access to the NVS via API
 
 <p>For machine to machine (M2M) access to the Argo Vocabularies on the NVS, the <strong>NVS SPARQL endpoint</strong> can be used.</p>
@@ -30,7 +52,7 @@ The dashboard for ArgoVocabs ticket is : https://github.com/orgs/nvs-vocabs/proj
 <p>SPARQL queries can be integrated into code written in other programming languages (Python, Matlab etc.).</p>
 
 > For a basic example, please see the "m2m_NVS_sparql.ipynb" file linked to this repo.
->> To test, open the file into a Jupyter Notebook; edit lines marked by '# Switch' to select either prefLabel/altLabel, and point to specific Argo vocabularies by inserting its name (e.g. 'R03') where the line is marked by '# Edit'.
+> To test, open the file into a Jupyter Notebook; edit lines marked by '# Switch' to select either prefLabel/altLabel, and point to specific Argo vocabularies by inserting its name (e.g. 'R03') where the line is marked by '# Edit'.
 
 
 # Editors list

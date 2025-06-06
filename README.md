@@ -18,9 +18,8 @@ The dashboard for ArgoVocabs ticket is : https://github.com/orgs/nvs-vocabs/proj
 
 # Standard process for releasing vocab, documentation and checker
 * The update and release of the new collection is made "on the fly", following ticket requirements.
-* When a new vocabulary collection is created, the documentation is updated accordingly (at the very least to indicate the new collection url).
-* The release of new version of the documentation is made regularly (no formal schedule). New version documentation must be advertised through the *argo-dm@groups.wmo.int* mailing list.
-    * Format_version evolves from version x.x to x.(x+1) or (x.1).0 when previous file in version x.x will not pass anymore the FileChecker with the envisioned change. It is good practice to make new metadata field optionnal, during a transition phase, which can last 1 to 3 years, before making them mandatory and hence increase the Format_version numbering). 
+* When a new vocabulary collection is created, the documentation is updated accordingly (at the very least to indicate the new collection url). When it occurred, it is good practice to first make a new metadata field optionnal. It should remain optionnal during a transition phase, which can usually last from 1 to 3 years, allowing the time necessary for DACs to perform the associated updates in their processing chain. Then, the field can be switched to mandatory and the _Format_version_ number is increased.
+* The release of new version of the documentation is made regularly (no formal schedule). New version documentation must be advertised through the *argo-dm@groups.wmo.int* mailing list.  
 * Once the documentation is released, the checker is updated. New version of the file checker must be advertised through the *argo-dm@groups.wmo.int* mailing list.
 
 # A few information on NVS updates

@@ -25,24 +25,24 @@ The dashboard for ArgoVocabs ticket is : https://github.com/orgs/nvs-vocabs/proj
 
 # A few information on NVS updates
 ## Necessary inputs to request the creation of a new collection to NOC/BODC
-The Vocab editors do not have the right to create new collections. This is only granted to NOC/BOSC. This is to avoid duplicate of similar collections when something already in place may be suitable for the purpose. 
+The Vocab editors do not have the right to create new collections. This is only granted to NOC/BODC. This is to avoid duplication of similar collections when something already in place may be suitable for the purpose. 
 Thus, to create a new collection, a request must be sent to NOC/BODC (Dani). This request must contain the following information:
  - Governance: who is the editor in charge of the table update
  - Collection Name
  - Description: description of the content of the collection
- - an excel or csv file containing the elements of the table: ID; preffered Label; Alternative Label (if relevant); Definition
+ - An excel or csv file containing the elements of the table: ID; preffered Label; Alternative Label (if relevant); Definition
 
 ## Mappings
-Mappings are used to inform relationship between tables. For instance, inform all the sensor_models manufactured by one sensor_maker, or all the platform_types manufactures by one platform_maker, etc.
+Mappings are used to inform relationship between concepts. For instance, inform all the sensor_models manufactured by one sensor_maker, or all the platform_types manufactures by one platform_maker, etc.
 They are used by the FileChecker to ensure the consistency between these metadata fields in the Argo dataset.
-The Vocab editors have the right to perform mappings. It is advised to ask NOC/BODC the appropriate mapping type before proceeding. Herebelow is an example of mapping file content submitted to NVS editor (bulk update option) between table R23 (platform_type) and R08 (intrument_type = platform_type + mounted CTD sensor type) and between R23 and R24 (platform_maker). BRD stands for broader, and MIN for MINIMUM
+The Vocab editors have the right to insert mappings. It is advised to ask NOC/BODC the appropriate mapping type before proceeding. Below is an example of a mapping file's content submitted to the NVS editor (bulk update option) between table R23 (platform_type) and R08 (intrument_type = platform_type + mounted CTD sensor type) and between R23 and R24 (platform_maker). Use BRD (narrow match) when the subject is broader than the object, and MIN (minor match) when the subject is related to the object without strict hierarchy. See below examples:
 - R23, ALTO, BRD, R08, 873, I
 - R23, HM2000, BRD, R08, 870, I
 - R23, HM4000, BRD, R08, 881, I
 - R23, XUANWU, BRD, R08, 882, I
 - R23, HM4000, MIN, R24, QNLM, I
 
-The Vocab editors can not delete mappings. If ever a correction was needed, the editor must ask NOC/BODC (Dani) to perform the deletion
+The Vocab editors cannot delete mappings. If ever a correction was needed, the editor must ask NOC/BODC (Dani) to perform the deletion
 
 
 # Resources: M2M access to the NVS via API

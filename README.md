@@ -5,10 +5,12 @@ The dashboard for ArgoVocabs ticket is : https://github.com/orgs/nvs-vocabs/proj
 # Guidance for management of issues
 1) Raise, describe, label and indicate an assignee of your issue
 2) Discuss the issue along the thread of the ticket
-3) Update label relevantly
+3) Update label relevantly (targetted table(s), mappings, documentation relevance, File checker, discussion is needed at the level of AVTT, ADMT approval is requested, etc.)
 4) Once an agreement has been reached summarize the agreement so that readers do not have to read the full thread back to know what to do
-5) Publish action list in the form a ticking boxes with the responsible for each action (and add them as assignee so relevant people can filter on this to quickly get the list of the actions they have to do)
-6) close the ticket when all the sub-actions are completely fulfilled (i.e. before "ticking an action", wait for the change to be visible in the operational flow. For instance, if you modify a table entry, wait for it to be accepted by NOC team, and effectively published in the table. This ensures potential final steps issues are not unnoticed).
+5) Publish an action list in the form a ticking boxes with the responsible for each action (and add them as assignee so relevant people can filter on this to quickly get the list of the actions they have to do)
+6) Once assignee has started to effectively work on the ticket, label the ticket as **"on-going"**
+7) Label the ticket as **"done"** when all the sub-actions are completely fulfilled (i.e. before "ticking an action", wait for the change to be visible in the operational flow. For instance, if you modify a table entry, wait for it to be accepted by NOC team, and effectively published in the table. This ensures potential final steps issues are not unnoticed).
+8) The list of **"done"** tickets will be reviewed at the following AVTT meeting for closure
 
 # The importance of label
 * Label are used for proper management of tickets and filtering for review, action follow-up, etc.

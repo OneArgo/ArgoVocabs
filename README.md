@@ -37,12 +37,28 @@ Thus, to create a new collection, a request must be sent to NOC/BODC (Dani). Thi
 ## Mappings
 Mappings are used to inform relationship between concepts. For instance, inform all the sensor_models manufactured by one sensor_maker, or all the platform_types manufactures by one platform_maker, etc.
 They are used by the FileChecker to ensure the consistency between these metadata fields in the Argo dataset.
-The Vocab editors have the right to insert mappings. It is advised to ask NOC/BODC the appropriate mapping type before proceeding. Below is an example of a mapping file's content submitted to the NVS editor (bulk update option) between table R23 (platform_type) and R08 (intrument_type = platform_type + mounted CTD sensor type) and between R23 and R24 (platform_maker). Use BRD (narrow match) when the subject is broader than the object, and MIN (minor match) when the subject is related to the object without strict hierarchy. See below examples:
+The Vocab editors have the right to insert mappings. It is advised to ask NOC/BODC the appropriate mapping type before proceeding.
+
+### __How to read a mapping ?__ 
+
+Mappings are relationships between \[NVS\] concepts. There is a "subject", a "predicate" and an "object". "predicate" indicates the relationship type between the "subject" and the "object". There are two kinds of predicates: "__narrower/broader__" when there is a __hierarchy__ between the subject and the object, and "__related__" when the subject is related to the object __without strict hierarchy__. <br>
+An example mapping can be found here https://vocab.nerc.ac.uk/mapping/I/1700614/. In this example, the "subject" https://vocab.nerc.ac.uk/collection/R27/current/AANDERAA_OPTODE_3830/ has a relationship to a "broader" concept (the "object"): http://vocab.nerc.ac.uk/collection/R26/current/AANDERAA/. The manufacturer is a broader concept than the more granular sensor designed and developed by the manufacturer.<br>
+Mappings can also be seen by clicking on the individual URIs for each concept. For instance, in https://vocab.nerc.ac.uk/collection/R27/current/AANDERAA_OPTODE_3830/, the optode (subject of the relationship) has a relationship to the broader concept ‘Aanderaa’, the manufacturer.<br>
+
+It is important to note that the inverse mapping/relationship must also exist for each of these, so if there is a ‘broader’ mapping in one direction between subject and object, a ‘narrower’ mapping must also exist in the other direction between object and subject. Otherwise the mappings won’t resolve on the NVS. For ‘related’, the inverse mapping is also ‘related’. By clicking on the ‘object’ in the above example: http://vocab.nerc.ac.uk/collection/R26/current/AANDERAA/, ‘Aanderaa’ is now the subject, and the relationship is now ‘narrower’ as the manufacturer is related to all the narrower, individual sensors.
+
+### __How to create a mapping ?__
+
+When mappings are loaded via the vocab editor, you only need to load one set of mappings in one direction however (i.e. only the broader ones, or only the narrower ones etc). This is because the inverse mappings are automatically generated on a trigger when we process what you have loaded.<br>
+
+For "__broader/narrower__" relationship, the "__BRD__" predicate code is used, for "__related__" relationship, the "__MIN__" predicate code is used (minor match).<br>
+
+Care must be taken as subject and object are reversed in the file, which can create confusion. Columns are as follows:<br>
+- object_NVS_table, object_concept_id, predicate_code, subject_NVS_table, subject_concept_id, modification_type (I for Insertion)
+
+Below is a concrete example of a mapping file's content submitted to the NVS editor (bulk update option) between table R23 (platform_type) and R08 (intrument_type = platform_type + mounted CTD sensor type), and between table R27 (sensor_model) and table R25 (sensor):<br>
 - R23, ALTO, BRD, R08, 873, I
-- R23, HM2000, BRD, R08, 870, I
-- R23, HM4000, BRD, R08, 881, I
-- R23, XUANWU, BRD, R08, 882, I
-- R23, HM4000, MIN, R24, QNLM, I
+- R27, AANDERAA_OPTODE , MIN, R25, OPTODE_DOXY , I
 
 The Vocab editors cannot delete mappings. If ever a correction was needed, the editor must ask NOC/BODC (Dani) to perform the deletion
 

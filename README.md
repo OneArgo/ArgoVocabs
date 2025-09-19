@@ -15,13 +15,13 @@ The dashboard for ArgoVocabs ticket is : https://github.com/orgs/OneArgo/project
 
 N.B.: there is some duplications between status (for the project) and labels. For the moment, we keep this duplication live because it is easy to filter on label in the main issue page, whereas status helps in ordering the dashboard nicely. This may be adapted later on.
 
-## Special case when issues comes from an ADMT action
-Sometimes, vocabulary discussions stem from a point raised at the ADMT. When this is the case, the chairs from the ADMT repository will attached the "AVTT issues management" project to OneArgo/ADMT action. Thus the action appears on the left hand side of the dashboard. It is the responsibility of the AVTT chair(s) to:
-- create as many sub-actions as necessary in the OneArgo/ArgoVocabs repository,
-- add the parent ADMT action to them (using relationship in the right panel; tip you need to use <- symbol and type OneArgo/ADMT to get access to the ADMT actions),
-- change in the parent ADMT action, the status in the "AVTT issues management" project from "no status" to "ADMT repository action": this means the above steps have been performed.
+## Special management case when issues stem from an ADMT action
+Sometimes, vocabulary discussions stem from a point raised at the ADMT. When this is the case, the chairs from the ADMT repository open an _OneArgo/ADMT_ action and will attach the "AVTT issues management" project to _OneArgo/ADMT_ action. Thus the action appears on the left hand side of the dashboard https://github.com/orgs/OneArgo/projects/4. It is the responsibility of the AVTT chair(s) to:
+- create as many sub-actions as necessary within the _OneArgo/ArgoVocabs_ repository;
+- add the parent ADMT action to them (using "**relationship**" item  in the right panel; tip you need to use "<-" symbol and type _OneArgo/ADMT_ to be able to select the ADMT action);
+- change in the parent ADMT action, the status in the "**AVTT issues management**" project from "**no status**" to "**ADMT repository action**": this means the above steps have been performed.
 
-The ADMT action has in general a wider scope than the sub-AVTT actions and can enclose more than vocabulary related sub-actions. Once the AVTT sub-actions are completed, the AVTT chair(s) report(s) within the ADMT action the completion of them.
+The ADMT action has in general a wider scope than the sub-AVTT actions and can enclose more than vocabulary related sub-actions. Once the AVTT sub-actions are completed, the AVTT chair(s) report(s) within the _OneArgo/ADMT_ action the completion of them.
 
 # The importance of label
 * Label are used for proper management of tickets and filtering for review, action follow-up, etc.

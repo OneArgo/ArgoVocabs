@@ -13,6 +13,15 @@ The dashboard for ArgoVocabs ticket is : https://github.com/orgs/OneArgo/project
 8) Label the ticket as **"done"** when all the sub-actions are completely fulfilled (i.e. before "ticking an action", wait for the change to be visible in the operational flow. For instance, if you modify a table entry, wait for it to be accepted by NOC team, and effectively published in the table. This ensures potential final steps issues are not unnoticed).  
 9) The list of **"done"** tickets will be reviewed at the following AVTT meeting for closure. Move the project status to "done" => This will automatically close the ticket.
 
+N.B.: there is some duplications between status (for the project) and labels. For the moment, we keep this duplication live because it is easy to filter on label in the main issue page, whereas status helps in ordering the dashboard nicely. This may be adapted later on.
+
+## Special case when issues comes from an ADMT action
+Sometimes, vocabulary discussions stem from a point raised at the ADMT. When this is the case, the chairs from the ADMT repository will attached the "AVTT issues management" project to OneArgo/ADMT action. Thus the action appears on the left hand side of the dashboard. It is the responsibility of the AVTT chair(s) to:
+- create as many sub-actions as necessary in the OneArgo/ArgoVocabs repository,
+- add the parent ADMT action to them (using relationship in the right panel; tip you need to use <- symbol and type OneArgo/ADMT to get access to the ADMT actions),
+- change in the parent ADMT action, the status in the "AVTT issues management" project from "no status" to "ADMT repository action": this means the above steps have been performed.
+
+The ADMT action has in general a wider scope than the sub-AVTT actions and can enclose more than vocabulary related sub-actions. Once the AVTT sub-actions are completed, the AVTT chair(s) report(s) within the ADMT action the completion of them.
 
 # The importance of label
 * Label are used for proper management of tickets and filtering for review, action follow-up, etc.

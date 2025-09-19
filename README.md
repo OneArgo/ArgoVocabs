@@ -1,12 +1,12 @@
 # ArgoVocabs
 A repository for the management of issues related to vocabularies managed by the Argo Data Management Team
-The dashboard for ArgoVocabs ticket is : https://github.com/orgs/nvs-vocabs/projects/2
+The dashboard for ArgoVocabs ticket is : https://github.com/orgs/OneArgo/projects/4
 
 # Guidance for management of issues
 1) Raise, describe, label and indicate an assignee of your issue
 2) Discuss the issue along the thread of the ticket
 3) Update label relevantly (targetted table(s), mappings, documentation relevance, File checker, discussion is needed at the level of AVTT, ADMT approval is requested, etc.)
-4) On the right panel, add the project "AVTT issues Management" and select the status "to do", "in progress","avtt approval","done": this ensures it appears correctly on the dashboard https://github.com/orgs/nvs-vocabs/projects/2
+4) On the right panel, add the project "AVTT issues Management" and select the status "to do", "in progress","avtt approval","done": this ensures it appears correctly on the dashboard https://github.com/orgs/OneArgo/projects/4
 5) Once an agreement has been reached summarize the agreement so that readers do not have to read the full thread back to know what to do
 6) Publish an action list in the form a ticking boxes with the responsible for each action (and add them as assignee so relevant people can filter on this to quickly get the list of the actions they have to do)
 7) Once assignee has started to effectively work on the ticket, label the ticket as **"on-going"**, and move the project status to "in progress"

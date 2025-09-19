@@ -6,11 +6,13 @@ The dashboard for ArgoVocabs ticket is : https://github.com/orgs/nvs-vocabs/proj
 1) Raise, describe, label and indicate an assignee of your issue
 2) Discuss the issue along the thread of the ticket
 3) Update label relevantly (targetted table(s), mappings, documentation relevance, File checker, discussion is needed at the level of AVTT, ADMT approval is requested, etc.)
-4) Once an agreement has been reached summarize the agreement so that readers do not have to read the full thread back to know what to do
-5) Publish an action list in the form a ticking boxes with the responsible for each action (and add them as assignee so relevant people can filter on this to quickly get the list of the actions they have to do)
-6) Once assignee has started to effectively work on the ticket, label the ticket as **"on-going"**
-7) Label the ticket as **"done"** when all the sub-actions are completely fulfilled (i.e. before "ticking an action", wait for the change to be visible in the operational flow. For instance, if you modify a table entry, wait for it to be accepted by NOC team, and effectively published in the table. This ensures potential final steps issues are not unnoticed).
-8) The list of **"done"** tickets will be reviewed at the following AVTT meeting for closure
+4) On the right panel, add the project "AVTT issues Management" and select the status "to do", "in progress","avtt approval","done": this ensures it appears correctly on the dashboard https://github.com/orgs/nvs-vocabs/projects/2
+5) Once an agreement has been reached summarize the agreement so that readers do not have to read the full thread back to know what to do
+6) Publish an action list in the form a ticking boxes with the responsible for each action (and add them as assignee so relevant people can filter on this to quickly get the list of the actions they have to do)
+7) Once assignee has started to effectively work on the ticket, label the ticket as **"on-going"**, and move the project status to "in progress"
+8) Label the ticket as **"done"** when all the sub-actions are completely fulfilled (i.e. before "ticking an action", wait for the change to be visible in the operational flow. For instance, if you modify a table entry, wait for it to be accepted by NOC team, and effectively published in the table. This ensures potential final steps issues are not unnoticed).  Move the project status to "done".
+9) The list of **"done"** tickets will be reviewed at the following AVTT meeting for closure
+
 
 # The importance of label
 * Label are used for proper management of tickets and filtering for review, action follow-up, etc.

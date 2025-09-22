@@ -1,17 +1,17 @@
 # ArgoVocabs
 A repository for the management of issues related to vocabularies managed by the Argo Vocabulary Task Team (AVTT) under the umbrella of the Argo Data Management Team.
-This team os composed of (alphabetical order):
+This team is composed of (alphabetical order):
 - [R.Cancouet](https://github.com/RomainCancouet),
 - [T.Carval](https://github.com/tcarval),
-- [D.Dobler](https://github.com/delphinedobler),
+- [D.Dobler](https://github.com/delphinedobler) (co-chair),
 - [C.Gourcuff](https://github.com/cgourcuf),
 - [B.Klein](https://github.com/BSHbirgit),
 - [M.Krieger](https://github.com/MKrieger29),
 - [M.Scanderberg](https://github.com/mscanderbeg),
 - [C.Schmechtig](https://github.com/catsch),
-- [V.Turpin](https://github.com/vturpin),
+- [V.Turpin](https://github.com/vturpin) (co-chair),
 - [A.Wong](https://github.com/apswong),
-- [D.Wright](https://github.com/danibodc)
+- [D.Wright](https://github.com/danibodc).
 
 
 Regular meetings (every 2 months) are held to review the ticket lists. 

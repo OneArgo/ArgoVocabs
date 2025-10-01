@@ -100,11 +100,22 @@ The Vocab editors cannot delete mappings. If ever a correction was needed, the e
 > For a basic example, please see the "m2m_NVS_sparql.ipynb" file linked to this repo.
 > To test, open the file into a Jupyter Notebook; edit lines marked by '# Switch' to select either prefLabel/altLabel, and point to specific Argo vocabularies by inserting its name (e.g. 'R03') where the line is marked by '# Edit'.
 
+# special case of R03, R14 and R18 tables
 
+Three tables are specific: [**R03**](https://vocab.nerc.ac.uk/search_nvs/R03/), [**R14**](https://vocab.nerc.ac.uk/search_nvs/R14/) and [**R18**](https://vocab.nerc.ac.uk/search_nvs/R18/) because they encompasses more information than a list of terms. 
+
+The responsbility of these table management is held by a main person: **R. Cancouet** is responsible for R14 and R18 core subpart and **C. Schmechtig** is responsible for R03 and R18 BGC subpart. The responsible name is also highlighted in bold font in the table below.
+When a change is performed on R03/R14/R18,the associated Excel spreadsheets are updated accordingly:
+- https://github.com/OneArgo/argo-format-user-manual/blob/main/etc/r03-argo-parameters-list-core-and-b.xlsx
+- https://github.com/OneArgo/argo-format-user-manual/blob/main/etc/r14-ArgoTechnicalParameterNames.xlsx
+- https://github.com/OneArgo/argo-format-user-manual/blob/main/etc/r18-Bio_Argo_Configuration_Parameter_Names.xlsx
+- https://github.com/OneArgo/argo-format-user-manual/blob/main/etc/r18-Core_Argo_ConfigurationParameterNames.xlsx
+
+  
 # Editors list
 Editors should be registered as editors in the NVS. Here : https://vocab.nerc.ac.uk/editor/. <br>
 NVS will then allow editors to edit new terms of the corresponding collections.
-Three tables are specific: [**R03**](https://vocab.nerc.ac.uk/search_nvs/R03/), [**R14**](https://vocab.nerc.ac.uk/search_nvs/R14/) and [**R18**](https://vocab.nerc.ac.uk/search_nvs/R18/) because they encompasses more information than a list of terms (a section will be written for them). The responsbility of these table management is held by a main person: **R. Cancouet** is responsible for R14 and R18 core subpart and **C. Schmechtig** is responsible for R03 and R18 BGC subpart. The responsible name is also highlighted in bold font in the table below.
+
 
 |Argo NVS Collections|Editors|
 |---|---|

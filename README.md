@@ -1,4 +1,7 @@
 # ArgoVocabs
+
+## I - The Argo Vocabulary Task Team
+
 A repository for the management of issues related to vocabularies managed by the Argo Vocabulary Task Team (AVTT) under the umbrella of the Argo Data Management Team.
 This team is composed of (alphabetical order):
 - [R.Cancouet](https://github.com/RomainCancouet),
@@ -19,7 +22,9 @@ The last AVTT meeting before the ADMT meeting also reviews and lists the tickets
 
 The dashboard for ArgoVocabs ticket is : https://github.com/orgs/OneArgo/projects/4
 
-# Guidance for management of issues
+## II - Management of Issues (a.k.a Tickets)
+
+### II.a - General case
 1) Raise, describe, label and indicate an assignee of your issue
 2) Discuss the issue along the thread of the ticket
 3) Update label relevantly (targetted table(s), mappings, documentation relevance, File checker, discussion is needed at the level of AVTT, ADMT approval is requested, etc.)
@@ -32,7 +37,7 @@ The dashboard for ArgoVocabs ticket is : https://github.com/orgs/OneArgo/project
 
 N.B.: there is some duplications between status (for the project) and labels. For the moment, we keep this duplication live because it is easy to filter on label in the main issue page, whereas status helps in ordering the dashboard nicely. This may be adapted later on.
 
-## Special management case when issues stem from an ADMT action
+### II.b - Special case when issues stem from an ADMT action
 Sometimes, vocabulary discussions stem from a point raised at the ADMT. When this is the case, the chairs from the ADMT repository open an _OneArgo/ADMT_ action and will attach the "AVTT issues management" project to _OneArgo/ADMT_ action. Thus the action appears on the left hand side of the dashboard https://github.com/orgs/OneArgo/projects/4. It is the responsibility of the AVTT chair(s) to:
 - create as many sub-actions as necessary within the _OneArgo/ArgoVocabs_ repository;
 - add the parent ADMT action to them (using "**relationship**" item  in the right panel; tip you need to use "<-" symbol and type _OneArgo/ADMT_ to be able to select the ADMT action);
@@ -40,21 +45,21 @@ Sometimes, vocabulary discussions stem from a point raised at the ADMT. When thi
 
 The ADMT action has in general a wider scope than the sub-AVTT actions and can enclose more than vocabulary related sub-actions. Once the AVTT sub-actions are completed, the AVTT chair(s) report(s) within the _OneArgo/ADMT_ action the completion of them.
 
-# The importance of label
+### II.c - The importance of label
 * Label are used for proper management of tickets and filtering for review, action follow-up, etc.
 * Each ticket should be flagged with the appropriate label for good management and labeling evolves as discussion progress.
 * Each label has a short description of its meaning.
 * While everyone should label ticket, it is part of the responsibilities of the co-chair of the AVTT to regularly review and update ticket labeling.
 
-# Standard process for releasing vocab, documentation and checker
+## III - Standard process for releasing vocab, documentation and checker
 * The update and release of the new collection is made "on the fly", following ticket requirements.
 * When a new vocabulary collection is created, the documentation is updated accordingly (at the very least to indicate the new collection url).
 * When a new metadata field is created, it is good practice to first make this new metadata field optionnal. It should remain optionnal during a transition phase, which can usually last from 1 to 3 years, allowing the time necessary for DACs to perform the associated updates in their processing chain. Then, the field can be switched to mandatory and the _Format_version_ number is increased.
 * The release of new version of the documentation is made regularly (no formal schedule). New version documentation must be advertised through the *argo-dm@groups.wmo.int* mailing list.  
 * Once the documentation is released, the checker is updated. New version of the file checker must be advertised through the *argo-dm@groups.wmo.int* mailing list.
 
-# A few information on NVS updates
-## Necessary inputs to request the creation of a new collection to NOC/BODC
+## IV - A few information on NVS updates
+### IV.a - Necessary inputs to request the creation of a new collection to NOC/BODC
 The Vocab editors do not have the right to create new collections. This is only granted to NOC/BODC. This is to avoid duplication of similar collections when something already in place may be suitable for the purpose. 
 Thus, to create a new collection, a request must be sent to NOC/BODC (Dani). This request must contain the following information:
  - Governance: who is the editor in charge of the table update
@@ -62,12 +67,12 @@ Thus, to create a new collection, a request must be sent to NOC/BODC (Dani). Thi
  - Description: description of the content of the collection
  - An excel or csv file containing the elements of the table: ID; preffered Label; Alternative Label (if relevant); Definition
 
-## Mappings
+### IV.b - Mappings
 Mappings are used to inform relationship between concepts. For instance, inform all the sensor_models manufactured by one sensor_maker, or all the platform_types manufactures by one platform_maker, etc.
 They are used by the FileChecker to ensure the consistency between these metadata fields in the Argo dataset.
 The Vocab editors have the right to insert mappings. It is advised to ask NOC/BODC the appropriate mapping type before proceeding.
 
-### __How to read a mapping ?__ 
+#### i) __How to read a mapping ?__ 
 
 Mappings are relationships between \[NVS\] concepts. There is a "subject", a "predicate" and an "object". "predicate" indicates the relationship type between the "subject" and the "object". There are two kinds of predicates: "__narrower/broader__" when there is a __hierarchy__ between the subject and the object, and "__related__" when the subject is related to the object __without strict hierarchy__. <br>
 An example mapping can be found here https://vocab.nerc.ac.uk/mapping/I/1700614/. In this example, the "subject" https://vocab.nerc.ac.uk/collection/R27/current/AANDERAA_OPTODE_3830/ has a relationship to a "broader" concept (the "object"): http://vocab.nerc.ac.uk/collection/R26/current/AANDERAA/. The manufacturer is a broader concept than the more granular sensor designed and developed by the manufacturer.<br>
@@ -75,7 +80,7 @@ Mappings can also be seen by clicking on the individual URIs for each concept. F
 
 It is important to note that the inverse mapping/relationship must also exist for each of these, so if there is a ‘broader’ mapping in one direction between subject and object, a ‘narrower’ mapping must also exist in the other direction between object and subject. Otherwise the mappings won’t resolve on the NVS. For ‘related’, the inverse mapping is also ‘related’. By clicking on the ‘object’ in the above example: http://vocab.nerc.ac.uk/collection/R26/current/AANDERAA/, ‘Aanderaa’ is now the subject, and the relationship is now ‘narrower’ as the manufacturer is related to all the narrower, individual sensors.
 
-### __How to create a mapping ?__
+#### ii) __How to create a mapping ?__
 
 When mappings are loaded via the vocab editor, you only need to load one set of mappings in one direction however (i.e. only the broader ones, or only the narrower ones etc). This is because the inverse mappings are automatically generated on a trigger when we process what you have loaded.<br>
 
@@ -91,7 +96,7 @@ Below is a concrete example of a mapping file's content submitted to the NVS edi
 The Vocab editors cannot delete mappings. If ever a correction was needed, the editor must ask NOC/BODC (Dani) to perform the deletion
 
 
-# Resources: M2M access to the NVS via API
+## V - Resources: M2M access to the NVS via API
 
 <p>For machine to machine (M2M) access to the Argo Vocabularies on the NVS, the <strong>NVS SPARQL endpoint</strong> can be used.</p>
 <p>General information on the NVS SPARQL endpoint can be found on the NVS website: https://vocab.nerc.ac.uk/sparql/</p>
@@ -100,7 +105,7 @@ The Vocab editors cannot delete mappings. If ever a correction was needed, the e
 > For a basic example, please see the "m2m_NVS_sparql.ipynb" file linked to this repo.
 > To test, open the file into a Jupyter Notebook; edit lines marked by '# Switch' to select either prefLabel/altLabel, and point to specific Argo vocabularies by inserting its name (e.g. 'R03') where the line is marked by '# Edit'.
 
-# special case of R03, R14 and R18 tables
+## VI - Management special case: R03, R14 and R18 tables
 
 Three tables are specific: [**R03**](https://vocab.nerc.ac.uk/search_nvs/R03/), [**R14**](https://vocab.nerc.ac.uk/search_nvs/R14/) and [**R18**](https://vocab.nerc.ac.uk/search_nvs/R18/) because they encompasses more information than a list of terms. 
 
@@ -112,10 +117,9 @@ When a change is performed on R03/R14/R18,the associated Excel spreadsheets are 
 - https://github.com/OneArgo/argo-format-user-manual/blob/main/etc/r18-Core_Argo_ConfigurationParameterNames.xlsx
 
   
-# Editors list
+## VII. Editors list
 Editors should be registered as editors in the NVS. Here : https://vocab.nerc.ac.uk/editor/. <br>
 NVS will then allow editors to edit new terms of the corresponding collections.
-
 
 |Argo NVS Collections|Editors|
 |---|---|
@@ -149,5 +153,5 @@ NVS will then allow editors to edit new terms of the corresponding collections.
 |[R25](https://vocab.nerc.ac.uk/search_nvs/R25/) - SENSOR|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [D. Dobler](https://github.com/delphinedobler)|
 |[R26](https://vocab.nerc.ac.uk/search_nvs/R26/) - SENSOR_MAKER|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [D. Dobler](https://github.com/delphinedobler)|
 |[R27](https://vocab.nerc.ac.uk/search_nvs/R27/) - SENSOR_MODEL|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [D. Dobler](https://github.com/delphinedobler)|
-|[R28](https://vocab.nerc.ac.uk/search_nvs/R28/) - CONTROLLER_BOARD_TYPE|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [ClareBellingham](https://github.com/ClareBellingham), [D. Dobler](https://github.com/delphinedobler)|
+|[R28](https://vocab.nerc.ac.uk/search_nvs/R28/) - CONTROLLER_BOARD_TYPE|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [C. Bellingham](https://github.com/ClareBellingham), [D. Dobler](https://github.com/delphinedobler)|
 |[R40](https://vocab.nerc.ac.uk/search_nvs/R40/) - PI_NAME|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [R. Wright](https://github.com/roswri), [D. Dobler](https://github.com/delphinedobler)|

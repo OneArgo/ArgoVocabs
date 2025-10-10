@@ -6,12 +6,12 @@
   - [II.a. General case](#IIa-General-case)
   - [II.b. Special case when issues stem from an ADMT action](#IIb-Special-case-when-issues-stem-from-an-ADMT-action)
   - [II.c. The importance of label](#IIc-The-importance-of-label)
-- [III. Standard process for releasing vocab, documentation and checker](#III-Standard-process-for-releasing-vocab,-documentation-and-checker)
+- [III. Standard process for releasing vocab, documentation and checker](#III-Standard-process-for-releasing-vocab-documentation-and-checker)
 - [IV. A few information on NVS updates](#IV-A-few-information-on-NVS-updates)
-  - [IV.a. Necessary inputs to request the creation of a new collection to NOC/BODC](#IVa-Necessary-inputs-to-request-the-creation-of-a-new-collection-to-NOC/BODC)
+  - [IV.a. Necessary inputs to request the creation of a new collection to NOC/BODC](#IVa-Necessary-inputs-to-request-the-creation-of-a-new-collection-to-NOCBODC)
   - [IV.b. Mappings](#IVb-Mappings)
 - [V. M2M access to the NVS via API](#V-M2M-access-to-the-NVS-via-API)
-- [VI. Management special case for R03, R14 and R18 tables](#VI-Management-special-case-for-R03,-R14-and-R18-tables)
+- [VI. Management special case for R03, R14 and R18 tables](#VI-Management-special-case-for-R03-R14-and-R18-tables)
 - [VII. Editors list](#VII-Editors-list)
 
 

@@ -1,21 +1,21 @@
 # ArgoVocabs
 
 ## Table of content
-- [I - The Argo Vocabulary Task Team](#I-The-Argo-Vocabulary-Task-Team)
-- [II - Management of Issues (a.k.a Tickets)](#II---Management-of-Issues-(a.k.a-Tickets))
-  - II.a - General case
-  - II.b - Special case when issues stem from an ADMT action
-  - II.c - The importance of label
-- III - Standard process for releasing vocab, documentation and checker
-- IV - A few information on NVS updates
-  - IV.a - Necessary inputs to request the creation of a new collection to NOC/BODC
-  - IV.b - Mappings
-- V - Resources: M2M access to the NVS via API
-- VI - Management special case: R03, R14 and R18 tables
-- VII. Editors list
+- [I. The Argo Vocabulary Task Team](#I.-The-Argo-Vocabulary-Task-Team)
+- [II. Management of Issues (a.k.a Tickets)](#II.-Management-of-Issues-(a.k.a-Tickets))
+  - [II.a. General case](#II.a.-General-case)
+  - [II.b. Special case when issues stem from an ADMT action](#II.b.-Special-case-when-issues-stem-from-an-ADMT-action)
+  - [II.c. The importance of label](#II.c.-The-importance-of-label)
+- [III. Standard process for releasing vocab, documentation and checker](#III.-Standard-process-for-releasing-vocab,-documentation-and-checker)
+- [IV. A few information on NVS updates](#IV.-A-few-information-on-NVS-updates)
+  - [IV.a. Necessary inputs to request the creation of a new collection to NOC/BODC](#IV.a.-Necessary-inputs-to-request-the-creation-of-a-new-collection-to-NOC/BODC)
+  - [IV.b. Mappings](#IV.b.-Mappings)
+- [V. M2M access to the NVS via API](#V.-M2M-access-to-the-NVS-via-API)
+- [VI. Management special case for R03, R14 and R18 tables](#VI.-Management-special-case-for-R03,-R14-and-R18-tables)
+- [VII. Editors list](#VII.-Editors-list)
 
 
-## I The Argo Vocabulary Task Team
+## I. The Argo Vocabulary Task Team
 
 A repository for the management of issues related to vocabularies managed by the Argo Vocabulary Task Team (AVTT) under the umbrella of the Argo Data Management Team.
 This team is composed of (alphabetical order):
@@ -37,9 +37,9 @@ The last AVTT meeting before the ADMT meeting also reviews and lists the tickets
 
 The dashboard for ArgoVocabs ticket is : https://github.com/orgs/OneArgo/projects/4
 
-## II - Management of Issues (a.k.a Tickets)
+## II. Management of Issues (a.k.a Tickets)
 
-### II.a - General case
+### II.a. General case
 1) Raise, describe, label and indicate an assignee of your issue
 2) Discuss the issue along the thread of the ticket
 3) Update label relevantly (targetted table(s), mappings, documentation relevance, File checker, discussion is needed at the level of AVTT, ADMT approval is requested, etc.)
@@ -52,7 +52,7 @@ The dashboard for ArgoVocabs ticket is : https://github.com/orgs/OneArgo/project
 
 N.B.: there is some duplications between status (for the project) and labels. For the moment, we keep this duplication live because it is easy to filter on label in the main issue page, whereas status helps in ordering the dashboard nicely. This may be adapted later on.
 
-### II.b - Special case when issues stem from an ADMT action
+### II.b. Special case when issues stem from an ADMT action
 Sometimes, vocabulary discussions stem from a point raised at the ADMT. When this is the case, the chairs from the ADMT repository open an _OneArgo/ADMT_ action and will attach the "AVTT issues management" project to _OneArgo/ADMT_ action. Thus the action appears on the left hand side of the dashboard https://github.com/orgs/OneArgo/projects/4. It is the responsibility of the AVTT chair(s) to:
 - create as many sub-actions as necessary within the _OneArgo/ArgoVocabs_ repository;
 - add the parent ADMT action to them (using "**relationship**" item  in the right panel; tip you need to use "<-" symbol and type _OneArgo/ADMT_ to be able to select the ADMT action);
@@ -60,21 +60,21 @@ Sometimes, vocabulary discussions stem from a point raised at the ADMT. When thi
 
 The ADMT action has in general a wider scope than the sub-AVTT actions and can enclose more than vocabulary related sub-actions. Once the AVTT sub-actions are completed, the AVTT chair(s) report(s) within the _OneArgo/ADMT_ action the completion of them.
 
-### II.c - The importance of label
+### II.c. The importance of label
 * Label are used for proper management of tickets and filtering for review, action follow-up, etc.
 * Each ticket should be flagged with the appropriate label for good management and labeling evolves as discussion progress.
 * Each label has a short description of its meaning.
 * While everyone should label ticket, it is part of the responsibilities of the co-chair of the AVTT to regularly review and update ticket labeling.
 
-## III - Standard process for releasing vocab, documentation and checker
+## III. Standard process for releasing vocab, documentation and checker
 * The update and release of the new collection is made "on the fly", following ticket requirements.
 * When a new vocabulary collection is created, the documentation is updated accordingly (at the very least to indicate the new collection url).
 * When a new metadata field is created, it is good practice to first make this new metadata field optionnal. It should remain optionnal during a transition phase, which can usually last from 1 to 3 years, allowing the time necessary for DACs to perform the associated updates in their processing chain. Then, the field can be switched to mandatory and the _Format_version_ number is increased.
 * The release of new version of the documentation is made regularly (no formal schedule). New version documentation must be advertised through the *argo-dm@groups.wmo.int* mailing list.  
 * Once the documentation is released, the checker is updated. New version of the file checker must be advertised through the *argo-dm@groups.wmo.int* mailing list.
 
-## IV - A few information on NVS updates
-### IV.a - Necessary inputs to request the creation of a new collection to NOC/BODC
+## IV. A few information on NVS updates
+### IV.a. Necessary inputs to request the creation of a new collection to NOC/BODC
 The Vocab editors do not have the right to create new collections. This is only granted to NOC/BODC. This is to avoid duplication of similar collections when something already in place may be suitable for the purpose. 
 Thus, to create a new collection, a request must be sent to NOC/BODC (Dani). This request must contain the following information:
  - Governance: who is the editor in charge of the table update
@@ -82,7 +82,7 @@ Thus, to create a new collection, a request must be sent to NOC/BODC (Dani). Thi
  - Description: description of the content of the collection
  - An excel or csv file containing the elements of the table: ID; preffered Label; Alternative Label (if relevant); Definition
 
-### IV.b - Mappings
+### IV.b. Mappings
 Mappings are used to inform relationship between concepts. For instance, inform all the sensor_models manufactured by one sensor_maker, or all the platform_types manufactures by one platform_maker, etc.
 They are used by the FileChecker to ensure the consistency between these metadata fields in the Argo dataset.
 The Vocab editors have the right to insert mappings. It is advised to ask NOC/BODC the appropriate mapping type before proceeding.
@@ -111,7 +111,7 @@ Below is a concrete example of a mapping file's content submitted to the NVS edi
 The Vocab editors cannot delete mappings. If ever a correction was needed, the editor must ask NOC/BODC (Dani) to perform the deletion
 
 
-## V - Resources: M2M access to the NVS via API
+## V. M2M access to the NVS via API
 
 <p>For machine to machine (M2M) access to the Argo Vocabularies on the NVS, the <strong>NVS SPARQL endpoint</strong> can be used.</p>
 <p>General information on the NVS SPARQL endpoint can be found on the NVS website: https://vocab.nerc.ac.uk/sparql/</p>
@@ -120,7 +120,7 @@ The Vocab editors cannot delete mappings. If ever a correction was needed, the e
 > For a basic example, please see the "m2m_NVS_sparql.ipynb" file linked to this repo.
 > To test, open the file into a Jupyter Notebook; edit lines marked by '# Switch' to select either prefLabel/altLabel, and point to specific Argo vocabularies by inserting its name (e.g. 'R03') where the line is marked by '# Edit'.
 
-## VI - Management special case: R03, R14 and R18 tables
+## VI. Management special case for R03, R14 and R18 tables
 
 Three tables are specific: [**R03**](https://vocab.nerc.ac.uk/search_nvs/R03/), [**R14**](https://vocab.nerc.ac.uk/search_nvs/R14/) and [**R18**](https://vocab.nerc.ac.uk/search_nvs/R18/) because they encompasses more information than a list of terms. 
 

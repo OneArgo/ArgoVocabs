@@ -1,6 +1,21 @@
 # ArgoVocabs
 
-## I - The Argo Vocabulary Task Team
+## Table of content
+- [I - The Argo Vocabulary Task Team](#I-The-Argo-Vocabulary-Task-Team)
+- [II - Management of Issues (a.k.a Tickets)](#II---Management-of-Issues-(a.k.a-Tickets))
+  - II.a - General case
+  - II.b - Special case when issues stem from an ADMT action
+  - II.c - The importance of label
+- III - Standard process for releasing vocab, documentation and checker
+- IV - A few information on NVS updates
+  - IV.a - Necessary inputs to request the creation of a new collection to NOC/BODC
+  - IV.b - Mappings
+- V - Resources: M2M access to the NVS via API
+- VI - Management special case: R03, R14 and R18 tables
+- VII. Editors list
+
+
+## I The Argo Vocabulary Task Team
 
 A repository for the management of issues related to vocabularies managed by the Argo Vocabulary Task Team (AVTT) under the umbrella of the Argo Data Management Team.
 This team is composed of (alphabetical order):

@@ -2,7 +2,7 @@
 
 ## Table of content
 - [I. The Argo Vocabulary Task Team](#I-The-Argo-Vocabulary-Task-Team)
-- [II. Management of Issues (a.k.a Tickets)](#II-Management-of-Issues-(aka-Tickets))
+- [II. Management of Issues (a.k.a Tickets)](#II-Management-of-Issues-aka-Tickets)
   - [II.a. General case](#IIa-General-case)
   - [II.b. Special case when issues stem from an ADMT action](#IIb-Special-case-when-issues-stem-from-an-ADMT-action)
   - [II.c. The importance of label](#IIc-The-importance-of-label)

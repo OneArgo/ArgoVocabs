@@ -12,7 +12,7 @@
   - [IV.b. Mappings](#IVb-Mappings)
     - [i) How to read a mapping ?](#i-How-to-read-a-mapping-)
     - [ii) How to create a mapping ?](#ii-How-to-create-a-mapping-)
-    - [iii) Which Argo tables require a mapping ?](#iii-How-to-create-a-mapping-)
+    - [iii) Which Argo tables require a mapping ?](#iii-Which-Argo-tables-require-a-mapping-)
 - [V. M2M access to the NVS via API](#V-M2M-access-to-the-NVS-via-API)
 - [VI. Management special case for R03, R14 and R18 tables](#VI-Management-special-case-for-R03-R14-and-R18-tables)
 - [VII. Editors list](#VII-Editors-list)

@@ -10,6 +10,7 @@
 - [IV. A few information on NVS updates](#IV-A-few-information-on-NVS-updates)
   - [IV.a. Necessary inputs to request the creation of a new collection to NOC/BODC](#IVa-Necessary-inputs-to-request-the-creation-of-a-new-collection-to-NOCBODC)
   - [IV.b. Mappings](#IVb-Mappings)
+    - [i) __How to read a mapping ?__](#iHow-to-read-a-mapping)
 - [V. M2M access to the NVS via API](#V-M2M-access-to-the-NVS-via-API)
 - [VI. Management special case for R03, R14 and R18 tables](#VI-Management-special-case-for-R03-R14-and-R18-tables)
 - [VII. Editors list](#VII-Editors-list)
@@ -110,6 +111,26 @@ Below is a concrete example of a mapping file's content submitted to the NVS edi
 
 The Vocab editors cannot delete mappings. If ever a correction was needed, the editor must ask NOC/BODC (Dani) to perform the deletion
 
+#### iii) __Which Argo tables require a mapping __
+The following tables require a mapping for Argo workflow purpose. This means that **when a new entry in these tables is performed, the associated mapping(s) must also be done**, otherwise, it will be rejected by the FileChecker.
+
+|Table|Mapped to|
+|---|---|
+|**R08**|R23|
+|**R15**|RMC, RTV|
+|**R23**|R08, R24|
+|**R24**|R23|
+|**R25**|R27|
+|**R26**|R27|
+|**R27**|R25, R26|
+|**RMC**|R15|
+|**RTV**|R15|
+
+The following tables require a mapping for external Argo purposes
+
+|Table|Mapped to|
+|---|---|
+|**R03**|P01|
 
 ## V. M2M access to the NVS via API
 

@@ -10,7 +10,9 @@
 - [IV. A few information on NVS updates](#IV-A-few-information-on-NVS-updates)
   - [IV.a. Necessary inputs to request the creation of a new collection to NOC/BODC](#IVa-Necessary-inputs-to-request-the-creation-of-a-new-collection-to-NOCBODC)
   - [IV.b. Mappings](#IVb-Mappings)
-    - [i) __How to read a mapping ?__](#iHow-to-read-a-mapping)
+    - [i) How to read a mapping ?](#i-How-to-read-a-mapping-)
+    - [ii) How to create a mapping ?](#ii-How-to-create-a-mapping-)
+    - [iii) Which Argo tables require a mapping ?](#iii-How-to-create-a-mapping-)
 - [V. M2M access to the NVS via API](#V-M2M-access-to-the-NVS-via-API)
 - [VI. Management special case for R03, R14 and R18 tables](#VI-Management-special-case-for-R03-R14-and-R18-tables)
 - [VII. Editors list](#VII-Editors-list)
@@ -88,7 +90,7 @@ Mappings are used to inform relationship between concepts. For instance, inform 
 They are used by the FileChecker to ensure the consistency between these metadata fields in the Argo dataset.
 The Vocab editors have the right to insert mappings. It is advised to ask NOC/BODC the appropriate mapping type before proceeding.
 
-#### i) __How to read a mapping ?__ 
+#### i) How to read a mapping ? 
 
 Mappings are relationships between \[NVS\] concepts. There is a "subject", a "predicate" and an "object". "predicate" indicates the relationship type between the "subject" and the "object". There are two kinds of predicates: "__narrower/broader__" when there is a __hierarchy__ between the subject and the object, and "__related__" when the subject is related to the object __without strict hierarchy__. <br>
 An example mapping can be found here https://vocab.nerc.ac.uk/mapping/I/1700614/. In this example, the "subject" https://vocab.nerc.ac.uk/collection/R27/current/AANDERAA_OPTODE_3830/ has a relationship to a "broader" concept (the "object"): http://vocab.nerc.ac.uk/collection/R26/current/AANDERAA/. The manufacturer is a broader concept than the more granular sensor designed and developed by the manufacturer.<br>
@@ -96,7 +98,7 @@ Mappings can also be seen by clicking on the individual URIs for each concept. F
 
 It is important to note that the inverse mapping/relationship must also exist for each of these, so if there is a ‘broader’ mapping in one direction between subject and object, a ‘narrower’ mapping must also exist in the other direction between object and subject. Otherwise the mappings won’t resolve on the NVS. For ‘related’, the inverse mapping is also ‘related’. By clicking on the ‘object’ in the above example: http://vocab.nerc.ac.uk/collection/R26/current/AANDERAA/, ‘Aanderaa’ is now the subject, and the relationship is now ‘narrower’ as the manufacturer is related to all the narrower, individual sensors.
 
-#### ii) __How to create a mapping ?__
+#### ii) How to create a mapping ?
 
 When mappings are loaded via the vocab editor, you only need to load one set of mappings in one direction however (i.e. only the broader ones, or only the narrower ones etc). This is because the inverse mappings are automatically generated on a trigger when we process what you have loaded.<br>
 
@@ -111,7 +113,7 @@ Below is a concrete example of a mapping file's content submitted to the NVS edi
 
 The Vocab editors cannot delete mappings. If ever a correction was needed, the editor must ask NOC/BODC (Dani) to perform the deletion
 
-#### iii) __Which Argo tables require a mapping __
+#### iii) Which Argo tables require a mapping ?
 The following tables require a mapping for Argo workflow purpose. This means that **when a new entry in these tables is performed, the associated mapping(s) must also be done**, otherwise, it will be rejected by the FileChecker.
 
 |Table|Mapped to|

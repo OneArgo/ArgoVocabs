@@ -70,11 +70,21 @@ The ADMT action has in general a wider scope than the sub-AVTT actions and can e
 * While everyone should label ticket, it is part of the responsibilities of the co-chair of the AVTT to regularly review and update ticket labeling.
 
 ## III. Standard process for releasing vocab, documentation and checker
+
+### vocab
 * The update and release of the new collection is made "on the fly", following ticket requirements.
 * When a new vocabulary collection is created, the documentation is updated accordingly (at the very least to indicate the new collection url).
-* When a new metadata field is created, it is good practice to first make this new metadata field optionnal. It should remain optionnal during a transition phase, which can usually last from 1 to 3 years, allowing the time necessary for DACs to perform the associated updates in their processing chain. Then, the field can be switched to mandatory and the _Format_version_ number is increased.
-* The release of new version of the documentation is made regularly (no formal schedule). New version documentation must be advertised through the *argo-dm@groups.wmo.int* mailing list.  
-* Once the documentation is released, the checker is updated. New version of the file checker must be advertised through the *argo-dm@groups.wmo.int* mailing list.
+* When a new metadata field is created, it is good practice to first make this new metadata field optionnal. It should remain optionnal during a transition phase, which can usually last from 1 to 3 years, allowing the time necessary for DACs to perform the associated updates in their processing chain. Then, the field can be switched to mandatory and the _Format_version_ number is increased. [EDIT] This statement may need to be revised, discussions on-going on this subject. 
+
+### documentation
+* The release of new version of the documentation is made regularly. There is no formal schedule but there is a review process within 2 to 3 months after the ADMT for tickets with both the labels “documentation” and “AVTT approved” or “ADMT approved”.
+* the UM is updated accordingly when relevant.
+* a draft is sent out for comment to *argo-dm@groups.wmo.int* mailing list.
+* the new version of the documentation is advertised through the *argo-dm@groups.wmo.int* mailing list, around March/April.
+
+### FileChecker
+* Once the documentation is released, the checker is updated.
+* The new version of the file checker must be advertised through the *argo-dm@groups.wmo.int* mailing list.
 
 ## IV. A few information on NVS updates
 ### IV.a. Necessary inputs to request the creation of a new collection to NOC/BODC

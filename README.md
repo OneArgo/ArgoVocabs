@@ -1,5 +1,10 @@
 # ArgoVocabs
 
+Argo vocabulary (a.k.a tables, a.k.a collections) is exposed on the web through the Nerc Vocabulary Server: <br>
+[https://vocab.nerc.ac.uk/search_nvs/cvl/?searchstr=argo&options=governance](https://vocab.nerc.ac.uk/search_nvs/cvl/?searchstr=argo&options=governance)<br>
+<br>
+Direct links to each of the vocabulary tables can be found  in the [last section](#VII-List-of-Argo-NVS-tables-and-their-editors) of this readme.<br>
+
 ## Table of content
 - [I. The Argo Vocabulary Task Team](#I-The-Argo-Vocabulary-Task-Team)
 - [II. Management of Issues (a.k.a Tickets)](#II-Management-of-Issues-aka-Tickets)
@@ -15,7 +20,7 @@
     - [iii) Which Argo tables require a mapping ?](#iii-Which-Argo-tables-require-a-mapping-)
 - [V. M2M access to the NVS via API](#V-M2M-access-to-the-NVS-via-API)
 - [VI. Management special case for R03, R14 and R18 tables](#VI-Management-special-case-for-R03-R14-and-R18-tables)
-- [VII. Editors list](#VII-Editors-list)
+- [VII. List of Argo NVS tables and their editors](#VII-List-of-Argo-NVS-tables-and-their-editors)
 
 
 ## I The Argo Vocabulary Task Team
@@ -155,21 +160,28 @@ The following tables require a mapping for external Argo purposes
 
 ## VI. Management special case for R03, R14 and R18 tables
 
-Three tables are specific: [**R03**](https://vocab.nerc.ac.uk/search_nvs/R03/), [**R14**](https://vocab.nerc.ac.uk/search_nvs/R14/) and [**R18**](https://vocab.nerc.ac.uk/search_nvs/R18/) because they encompasses more information than a list of terms. 
+Three tables are specific: [**R03**](https://vocab.nerc.ac.uk/search_nvs/R03/), [**R14**](https://vocab.nerc.ac.uk/search_nvs/R14/) and [**R18**](https://vocab.nerc.ac.uk/search_nvs/R18/) because they encompass more information than solely a list of terms. 
 
-The responsbility of these table management is held by a main person: **R. Cancouet** is responsible for R14 and R18 core subpart and **C. Schmechtig** is responsible for R03 and R18 BGC subpart. The responsible name is also highlighted in bold font in the table below.
-When a change is performed on R03/R14/R18,the associated Excel spreadsheets are updated accordingly:
+The responsbility of these table management is held by a main person: <br>
+- **R. Cancouet** is responsible for R14 and R18 core subpart<br>
+- **C. Schmechtig** is responsible for R03 and R18 BGC subpart<br>
+The responsible name is also highlighted in bold font in the table of the next section.
+
+When a change is performed on R03/R14/R18, the associated Excel spreadsheets are updated accordingly:
 - https://github.com/OneArgo/argo-format-user-manual/blob/main/etc/r03-argo-parameters-list-core-and-b.xlsx
 - https://github.com/OneArgo/argo-format-user-manual/blob/main/etc/r14-ArgoTechnicalParameterNames.xlsx
 - https://github.com/OneArgo/argo-format-user-manual/blob/main/etc/r18-Bio_Argo_Configuration_Parameter_Names.xlsx
 - https://github.com/OneArgo/argo-format-user-manual/blob/main/etc/r18-Core_Argo_ConfigurationParameterNames.xlsx
 
   
-## VII. Editors list
-Editors should be registered as editors in the NVS. Here : https://vocab.nerc.ac.uk/editor/. <br>
-NVS will then allow editors to edit new terms of the corresponding collections.
+## VII. List of Argo NVS tables and their editors
 
-|Argo NVS Collections|Editors|
+The people responsible for updating Argo tables (or collections in NVS jargon) should be registered as **editors** in the NVS. <br>
+The interface that allows table updates is accessible through this url: **https://vocab.nerc.ac.uk/editor/**. <br>
+Once registered, the editors are allowed to edit the corresponding tables (collections) using this interface. <br>
+The edition process mainly consists of three steps: loading, submission by the editor and review by the NOC/NVS team.<br>
+
+|Argo NVS tables (collections)|Editors|
 |---|---|
 |[R01](https://vocab.nerc.ac.uk/search_nvs/R01/) - DATA_TYPE|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [D. Dobler](https://github.com/delphinedobler)|
 |[RR2](https://vocab.nerc.ac.uk/search_nvs/RR2/) - RT_QC_FLAG|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [D. Dobler](https://github.com/delphinedobler)|

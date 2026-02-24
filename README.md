@@ -3,7 +3,7 @@
 Argo vocabulary (a.k.a tables, a.k.a collections) is exposed on the web through the Nerc Vocabulary Server: <br>
 [https://vocab.nerc.ac.uk/search_nvs/cvl/?searchstr=argo&options=governance](https://vocab.nerc.ac.uk/search_nvs/cvl/?searchstr=argo&options=governance)<br>
 <br>
-Direct links to each of the vocabulary tables can be found  in the [last section](#VII-List-of-Argo-NVS-tables-and-their-editors) of this readme.<br>
+Direct links to each of the vocabulary tables can be found  in the [last section](#VII-List-of-Argo-NVS-tables-their-editors-and-associated-Argo-NetCDF-variables) of this readme.<br>
 
 ## Table of content
 - [I. The Argo Vocabulary Task Team](#I-The-Argo-Vocabulary-Task-Team)
@@ -190,9 +190,9 @@ Once registered, the editors are allowed to edit the corresponding tables (colle
 The edition process mainly consists of three steps: loading, submission by the editor and review by the NOC/NVS team.<br>
 
 |Argo NVS tables (collections)|Editors|Argo NetCDF Variable|Used NVS field|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |[R01](https://vocab.nerc.ac.uk/search_nvs/R01/) - DATA_TYPE|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [D. Dobler](https://github.com/delphinedobler)| DATA_TYPE | prefLabel |
-|[RR2](https://vocab.nerc.ac.uk/search_nvs/RR2/) - RT_QC_FLAG|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [D. Dobler](https://github.com/delphinedobler)| {param}_QC or {param}_ADJUSTED_QC | altLabel |
+|[RR2](https://vocab.nerc.ac.uk/search_nvs/RR2/) - RT_QC_FLAG|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [D. Dobler](https://github.com/delphinedobler)| {param}_QC <br> {param}_ADJUSTED_QC | altLabel |
 |[RD2](https://vocab.nerc.ac.uk/search_nvs/RD2/) - DM_QC_FLAG|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [D. Dobler](https://github.com/delphinedobler)| {param}_ADJUSTED_QC | altLabel | 
 |[RP2](https://vocab.nerc.ac.uk/search_nvs/RP2/) - PROF_QC_FLAG|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [D. Dobler](https://github.com/delphinedobler)| PROFILE_{param}_QC | altLabel | 
 |[**R03**](https://vocab.nerc.ac.uk/search_nvs/R03/) - PARAMETER|[**C. Schmechtig**](https://github.com/catsch), [V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [apswong](https://github.com/apswong), [D. Dobler](https://github.com/delphinedobler)| PARAMETER, STATION_PARAMETERS, HISTORY_PARAMETER, TRAJECTORY_PARAMETERS and also used to name netCDF variables in profile files | altLabel + definition for local attributes and properties | 

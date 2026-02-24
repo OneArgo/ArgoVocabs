@@ -21,7 +21,7 @@ Direct links to each of the vocabulary tables can be found  in the [last section
     - [iv) Which Argo tables require a mapping ?](#iv-Which-Argo-tables-require-a-mapping-)
 - [V. M2M access to the NVS via API](#V-M2M-access-to-the-NVS-via-API)
 - [VI. Management special case for R03, R14 and R18 tables](#VI-Management-special-case-for-R03-R14-and-R18-tables)
-- [VII. List of Argo NVS tables, their editors and associated Argo NetCDF variables](#VII-List-of-Argo-NVS-tables-their-editors-and-Argo-NetCDF-variables)
+- [VII. List of Argo NVS tables, their editors and associated Argo NetCDF variables](#VII-List-of-Argo-NVS-tables-their-editors-and-associated-Argo-NetCDF-variables)
 
 
 ## I The Argo Vocabulary Task Team

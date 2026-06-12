@@ -32,13 +32,16 @@ This team is composed of (alphabetical order):
 - [T.Carval](https://github.com/tcarval),
 - [D.Dobler](https://github.com/delphinedobler) (co-chair),
 - [C.Gourcuff](https://github.com/cgourcuf),
-- [B.Klein](https://github.com/BSHbirgit),
+- [H.Bittig](https://github.com/HCBScienceProducts),
 - [M.Krieger](https://github.com/MKrieger29),
 - [M.Scanderberg](https://github.com/mscanderbeg),
 - [C.Schmechtig](https://github.com/catsch),
 - [V.Turpin](https://github.com/vturpin) (co-chair),
 - [A.Wong](https://github.com/apswong),
 - [D.Wright](https://github.com/danibodc).
+
+Previous members:
+- [B.Klein](https://github.com/BSHbirgit)
 
 
 Regular meetings (every 2 months) are held to review the ticket lists. 

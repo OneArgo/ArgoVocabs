@@ -28,11 +28,11 @@ Direct links to each of the vocabulary tables can be found  in the [last section
 
 A repository for the management of issues related to vocabularies managed by the Argo Vocabulary Task Team (AVTT) under the umbrella of the Argo Data Management Team.
 This team is composed of (alphabetical order):
+- [H.Bittig](https://github.com/HCBScienceProducts),
 - [R.Cancouet](https://github.com/RomainCancouet),
 - [T.Carval](https://github.com/tcarval),
 - [D.Dobler](https://github.com/delphinedobler) (co-chair),
 - [C.Gourcuff](https://github.com/cgourcuf),
-- [H.Bittig](https://github.com/HCBScienceProducts),
 - [M.Krieger](https://github.com/MKrieger29),
 - [M.Scanderberg](https://github.com/mscanderbeg),
 - [C.Schmechtig](https://github.com/catsch),

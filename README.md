@@ -6,7 +6,7 @@ Argo vocabulary (a.k.a tables, a.k.a collections) is exposed on the web through 
 Direct links to each of the vocabulary tables can be found  in the [last section](#VII-List-of-Argo-NVS-tables-their-editors-and-associated-Argo-NetCDF-variables) of this readme.<br>
 
 ## Table of content
-- [I. The Argo Vocabulary Task Team](#I-The-Argo-Vocabulary-Task-Team)
+- [I. The Argo Vocabulary and Format Task Team](#I-The-Argo-Vocabulary-and-Format-Task-Team)
 - [II. Management of Issues (a.k.a Tickets)](#II-Management-of-Issues-aka-Tickets)
   - [II.a. General case](#IIa-General-case)
   - [II.b. Special case when issues stem from an ADMT action](#IIb-Special-case-when-issues-stem-from-an-ADMT-action)
@@ -24,9 +24,18 @@ Direct links to each of the vocabulary tables can be found  in the [last section
 - [VII. List of Argo NVS tables, their editors and associated Argo NetCDF variables](#VII-List-of-Argo-NVS-tables-their-editors-and-associated-Argo-NetCDF-variables)
 
 
-## I The Argo Vocabulary Task Team
+## I The Argo Vocabulary and Format Task Team
 
-A repository for the management of issues related to vocabularies managed by the Argo Vocabulary Task Team (AVTT) under the umbrella of the Argo Data Management Team.
+A repository for the management of issues related to vocabularies managed by the Argo Vocabulary and Format Task Team (AVFTT) under the umbrella of the Argo Data Management Team. In July 2026, the team name was changed from AVTT to AVFTT to better reflect the scope of the activities (see here below).
+
+The AVFTT activites consists of:
+- fostering and contributing to the discussions with respect to vocabulary and format within Argo
+- preparing proposals for changes to be presented at the ADMT
+- managing the ArgoVocabs GitHub repository (moderating, sorting priorities, labelling tickets - including levels of decision, mapping needs, documentation update, etc.)
+- performing vocabulary edition of the NVS tables under Argo governance (and under OceanOPS governance for R41)
+- applying and reporting (in the NVS, or ArgoVocabs GitHub) the ADMT discussions and decisions that relate to Argo vocabulary and format
+- making the link with the Argo Format File Checker (FC). 
+
 This team is composed of (alphabetical order):
 - [H.Bittig](https://github.com/HCBScienceProducts),
 - [R.Cancouet](https://github.com/RomainCancouet),
@@ -43,11 +52,11 @@ This team is composed of (alphabetical order):
 Previous members:
 - [B.Klein](https://github.com/BSHbirgit)
 
-
 Regular meetings (every 2 months) are held to review the ticket lists. 
-The last AVTT meeting before the ADMT meeting also reviews and lists the tickets that require an ADMT discussion/approval.
+The last AVFTT meeting before the ADMT meeting also reviews and lists the tickets that require an ADMT discussion/approval.
 
 The dashboard for ArgoVocabs ticket is : https://github.com/orgs/OneArgo/projects/4
+
 
 ## II. Management of Issues (a.k.a Tickets)
 

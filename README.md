@@ -1,7 +1,7 @@
 # ArgoVocabs
 
 Argo vocabulary (a.k.a tables, a.k.a collections) is exposed on the web through the Nerc Vocabulary Server: <br>
-[https://vocab.nerc.ac.uk/search_nvs/cvl/?searchstr=argo&options=governance](https://vocab.nerc.ac.uk/search_nvs/cvl/?searchstr=argo&options=governance)<br>
+[https://vocab.nerc.ac.uk/search_nvs/cvl/?searchstr=argo&options=preflabel,governance](https://vocab.nerc.ac.uk/search_nvs/cvl/?searchstr=argo&options=preflabel,governance)<br>
 <br>
 Direct links to each of the vocabulary tables can be found  in the [last section](#VII-List-of-Argo-NVS-tables-their-editors-and-associated-Argo-NetCDF-variables) of this readme.<br>
 
@@ -234,4 +234,9 @@ The edition process mainly consists of three steps: loading, submission by the e
 |[R26](https://vocab.nerc.ac.uk/search_nvs/R26/) - SENSOR_MAKER|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [D. Dobler](https://github.com/delphinedobler)| SENSOR_MAKER | altLabel |
 |[R27](https://vocab.nerc.ac.uk/search_nvs/R27/) - SENSOR_MODEL|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [D. Dobler](https://github.com/delphinedobler)| SENSOR_MODEL | altLabel |
 |[R28](https://vocab.nerc.ac.uk/search_nvs/R28/) - CONTROLLER_BOARD_TYPE|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [C. Bellingham](https://github.com/ClareBellingham), [D. Dobler](https://github.com/delphinedobler)| CONTROLLER_BOARD_TYPE_PRIMARY, CONTROLLER_BOARD_TYPE_SECONDARY | altLabel |
+|[R31](https://vocab.nerc.ac.uk/search_nvs/R31/) - ENDING_CAUSE |[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [D. Dobler](https://github.com/delphinedobler)| ANOMALY | altLabel |
+|[R33](https://vocab.nerc.ac.uk/search_nvs/R33/) - BATTERY_MAKER|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [D. Dobler](https://github.com/delphinedobler)| BATTERY_TYPE | altLabel |
+|[R34](https://vocab.nerc.ac.uk/search_nvs/R34/) - BATTERY_TYPE|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [D. Dobler](https://github.com/delphinedobler)| BATTERY_TYPE, BATTERY_PACKS | altLabel and prefLabel |
+|[R35](https://vocab.nerc.ac.uk/search_nvs/R35/) - BATTERY_SIZE|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [D. Dobler](https://github.com/delphinedobler)| BATTERY_PACKS | altLabel |
 |[R40](https://vocab.nerc.ac.uk/search_nvs/R40/) - PI_NAME|[V. Turpin](https://github.com/vturpin), [T. Carval](https://github.com/tcarval), [M. Krieger](https://github.com/MKrieger29), [R. Cancouet](https://github.com/RomainCancouet), [R. Wright](https://github.com/roswri), [D. Dobler](https://github.com/delphinedobler)| PI_NAME | altLabel |
+|[R41](https://vocab.nerc.ac.uk/search_nvs/R41/) - PROGRAM_NAME|[V. Turpin](https://github.com/vturpin), [M. Krieger](https://github.com/MKrieger29), [R. Wright](https://github.com/roswri), [D. Dobler](https://github.com/delphinedobler)| PROGRAM_NAME | prefLabel |

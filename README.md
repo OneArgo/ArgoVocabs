@@ -133,6 +133,22 @@ https://vocab.nerc.ac.uk/search_nvs/cmap/?a=R15&b=RTV<br>
 Just replace the R15 and RTV in the url with the tables you wish to check.<br>
 You can also access this through https://vocab.nerc.ac.uk/search_nvs/, go to the "Explore Mapping" section. Enter the first table. A view with the associated tables shows up. Selecting the "view mapping" icon on the right will redirect you to the url above.
 
+In Python, you can also export mappings with the Argopy library:
+```python
+from argopy import ArgoReferenceMapping
+
+# Loading a mapping using two Argo parameter names or table identifiers:
+mapping = ArgoReferenceMapping('R24', 'R23')  # or: ArgoReferenceMapping('PLATFORM_MAKER', 'PLATFORM_TYPE')
+
+# Get the list of subjects, objects and predicates
+mapping.objects
+mapping.predicates
+mapping.subjects
+
+# or simply export all relations to a dataframe:
+mapping.to_dataframe()
+```
+
 #### iii) How to create a mapping ?
 
 When mappings are loaded via the vocab editor, you only need to load one set of mappings in one direction however (i.e. only the broader ones, or only the narrower ones etc). This is because the inverse mappings are automatically generated on a trigger when we process what you have loaded.<br>
@@ -171,12 +187,82 @@ The following tables require a mapping for external Argo purposes
 
 ## V. M2M access to the NVS via API
 
+### Using SPARQL
 <p>For machine to machine (M2M) access to the Argo Vocabularies on the NVS, the <strong>NVS SPARQL endpoint</strong> can be used.</p>
 <p>General information on the NVS SPARQL endpoint can be found on the NVS website: https://vocab.nerc.ac.uk/sparql/</p>
 <p>SPARQL queries can be integrated into code written in other programming languages (Python, Matlab etc.).</p>
 
 > For a basic example, please see the "m2m_NVS_sparql.ipynb" file linked to this repo.
 > To test, open the file into a Jupyter Notebook; edit lines marked by '# Switch' to select either prefLabel/altLabel, and point to specific Argo vocabularies by inserting its name (e.g. 'R03') where the line is marked by '# Edit'.
+
+### Using Argopy
+For machine to machine (M2M) access to the Argo Vocabularies on the NVS, the Argopy library can also be used.
+
+**At high level**, Argopy provides the specifics reference table, value and mapping classes. Each class provides direct online (and offline) access to the NVS content. Check the documentation for all details at: https://argopy.readthedocs.io/en/latest/advanced-tools/metadata/nvs_ref_tables.html
+
+Examples on how to access Argo Vocabularies with Argopy:
+
+```python
+from argopy import ArgoReferenceTable
+
+# Use an Argo parameter name, documented by one of the Argo reference tables:
+art = ArgoReferenceTable('SENSOR')
+
+# or a reference table identifier:
+art = ArgoReferenceTable('R25')
+
+# or a URN:
+art = ArgoReferenceTable.from_urn('SDN:R25::CTD_TEMP')
+```
+The ``art`` object holds all information from the NVS as attributes and comes with search and export methods.
+
+
+```python
+from argopy import ArgoReferenceValue
+
+# One possible value for the Argo parameter 'SENSOR_MODEL':
+arv = ArgoReferenceValue('AANDERAA_OPTODE_3835')
+
+# For ambiguous value seen in more than one Reference Table
+arv = ArgoReferenceValue('4', reference='RT_QC_FLAG')
+arv = ArgoReferenceValue('4', reference='RR2')
+
+# From NVS/URN jargon:
+arv = ArgoReferenceValue.from_urn('SDN:R27::AANDERAA_OPTODE_3835')
+```
+The ``arv`` object holds all information from the NVS as attributes and comes with export methods.
+
+
+```python
+from argopy import ArgoReferenceMapping
+
+# Use two Argo parameter names, documented by one of the Argo reference tables:
+arm = ArgoReferenceMapping('PLATFORM_MAKER', 'PLATFORM_TYPE')
+
+# or reference table identifiers:
+arm = ArgoReferenceMapping('R24', 'R23')
+```
+The ``arm`` object holds all information from the NVS as attributes and comes with export methods.
+
+
+**At low level**, Argopy provides a NVS store class to easily retrieve anything from the NVS server, not only Argo content ([see documentation](https://argopy.readthedocs.io/en/latest/advanced-tools/metadata/nvs_ref_tables.html#internal-nvs-store)).
+
+Examples:
+```python
+from argopy.stores import NVS
+
+nvs = NVS(cache=True)
+
+# Load vocabularies (tables):
+nvs.load_vocabulary('P07')
+nvs.load_vocabulary_collection('P07') # return a subset of data to briefly describe a vocabulary
+
+# Load concepts (values):
+nvs.load_concept('PH4D8A5Y', rtid='P07')
+
+# Load mappings:
+nvs.load_mapping('R24', 'R23')
+```
 
 ## VI. Management special case for R03, R14 and R18 tables
 
@@ -193,6 +279,7 @@ When a change is performed on R03/R14/R18, the associated Excel spreadsheets are
 - https://github.com/OneArgo/argo-format-user-manual/blob/main/etc/r18-Bio_Argo_Configuration_Parameter_Names.xlsx
 - https://github.com/OneArgo/argo-format-user-manual/blob/main/etc/r18-Core_Argo_ConfigurationParameterNames.xlsx
 
+Note: The Argopy library implements an [automatic detection of extra-attributes for values in these tables](https://argopy.readthedocs.io/en/latest/advanced-tools/metadata/nvs_ref_tables.html#extra-attributes-r03-r14-r18). 
   
 ## VII. List of Argo NVS tables, their editors and associated Argo NetCDF variables
 
